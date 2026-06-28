@@ -1,4 +1,4 @@
-name: Build test
+name: Sichigatsu kernel
 
 on:
   workflow_dispatch:
