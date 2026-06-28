@@ -1,4 +1,4 @@
-CONFIG_LOCALVERSION="-Sichigatsu(七月)"
+CONFIG_LOCALVERSION="-Sichigatsu(七月)-Kernel"
 
 #
 # KernelSU
