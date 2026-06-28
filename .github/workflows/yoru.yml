@@ -1,4 +1,4 @@
-name: PhroLova Kernel
+name: Sichigatsu Kernel
 
 on:
   workflow_dispatch:
