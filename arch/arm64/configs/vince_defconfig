@@ -1,4 +1,4 @@
-CONFIG_LOCALVERSION="-Mystrile-Kernel-[Fantasy]"
+CONFIG_LOCALVERSION="-Mystrile-Kernel"
 
 #
 # KernelSU
