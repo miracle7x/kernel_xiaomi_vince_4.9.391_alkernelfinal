@@ -1,4 +1,4 @@
-name: Shicigatsu Kernel
+name: Mystrile Kernel
 
 on:
   workflow_dispatch:
