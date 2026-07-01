@@ -25,7 +25,7 @@ KIMG="$OUTDIR/Image.gz"
 export PATH="$ROOTDIR/weebx-clang/bin:$PATH"
 
 # ================= INFO =================
-KERNEL_NAME="Sichigatsu"
+KERNEL_NAME="Mystrile-Kernel"
 DEVICE="vince"
 
 # =============== DATE (WIB) ===============
