@@ -567,14 +567,13 @@ jobs:
           body: |
             ## vince (Xiaomi Redmi 5 Plus) — BakaSU + SUSFS
 
-            This release ships both build variants: **stock** (`tissot_defconfig`) and **OC** (`tissot-oc_defconfig`).
+            This release ships both build variants: **stock** (`vince_defconfig`).
 
             **Variant clocks**
 
             | Variant | GPU (Adreno 506) | Change |
             |---|---:|---|
             | stock | 650 MHz | — |
-            | OC | **700 MHz** | GPU +50 MHz (safe, sdm632 template) |
 
             CPU 2016 MHz identical in both variants (2.208 MHz over-volts low-bin units and boot-loops). OC raises only the GPU behind `CONFIG_TISSOT_OC`.
 
