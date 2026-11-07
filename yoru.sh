@@ -9,7 +9,7 @@ white='\033[0m'
 # ================= VARIANT =================
 VARIANT=$1
 if [ -z "$VARIANT" ]; then
-    VARIANT="KSU"
+    VARIANT="ksu-next"
 fi
 
 # ================= PATH =================
@@ -25,7 +25,7 @@ KIMG="$OUTDIR/Image.gz"
 export PATH="$ROOTDIR/weebx-clang/bin:$PATH"
 
 # ================= INFO =================
-KERNEL_NAME="Mystrile-Kernel"
+KERNEL_NAME="pearl"
 DEVICE="vince"
 
 # =============== DATE (WIB) ===============
@@ -51,7 +51,7 @@ ZIP_NAME=""
 clone_anykernel() {
     if [ ! -d "$ANYKERNEL_DIR" ]; then
         echo -e "$yellow[+] Cloning AnyKernel3...$white"
-        git clone -b ${DEVICE} https://github.com/rahmatsobrian/AnyKernel3.git "$ANYKERNEL_DIR" || exit 1
+        git clone -b ${DEVICE} https://github.com/miracle7x/AnyKernel3.git "$ANYKERNEL_DIR" || exit 1
     fi
 }
 
@@ -107,7 +107,7 @@ build_kernel() {
     echo -e "$yellow[+] Preparing kernel config for ${VARIANT}...$white"
     cp arch/arm64/configs/${DEFCONFIG} arch/arm64/configs/${TEMP_DEFCONFIG}
 
-    if [ "$VARIANT" == "NonKSU" ]; then
+    if [ "$VARIANT" == "vanilla" ]; then
         echo -e "$yellow[+] Stripping KSU configs for Non-KSU build...$white"
         sed -i 's/CONFIG_KSU=y/# CONFIG_KSU is not set/g' arch/arm64/configs/${TEMP_DEFCONFIG}
     fi
