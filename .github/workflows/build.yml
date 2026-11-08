@@ -49,7 +49,7 @@ jobs:
   
       - name: Setup BakaSU
         run: |
-          curl -LSs "https://raw.githubusercontent.com/Baka-SU/BakaSU/main/kernel/setup.sh" | bash -s sync-up
+          curl -LSs "https://raw.githubusercontent.com/Baka-SU/BakaSU/main/kernel/setup.sh" | bash -s main
 
       - name: Start Build (with log)
         env:
