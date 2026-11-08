@@ -781,31 +781,6 @@ CONFIG_RWSEM_PRIO_AWARE=y
 CONFIG_FREEZER=y
 CONFIG_SIMPLE_GPU_ALGORITHM=y
 CONFIG_SCHED_BORE=y
-# BakaSU (KernelSU fork) + SUSFS
+
+# BakaSU
 CONFIG_KSU=y
-CONFIG_KSU_SUSFS=y
-CONFIG_KSU_SUSFS_SUS_PATH=y
-CONFIG_KSU_SUSFS_SUS_MOUNT=y
-CONFIG_KSU_SUSFS_SUS_KSTAT=y
-CONFIG_KSU_SUSFS_SPOOF_UNAME=y
-CONFIG_KSU_SUSFS_OPEN_REDIRECT=y
-CONFIG_KSU_SUSFS_SUS_MAP=y
-CONFIG_KSU_SUSFS_SPOOF_CMDLINE_OR_BOOTCONFIG=y
-CONFIG_KSU_SUSFS_HIDE_KSU_SUSFS_SYMBOLS=y
-CONFIG_KSU_MULTI_MANAGER_SUPPORT=y
-# NoMount (VFS path redirection, runtime-inert until rules are pushed via keyring)
-CONFIG_NOMOUNT=y
-# CONFIG_NOMOUNT_DEFAULT_ON is not set
-
-# Multi-Gen LRU (MGLRU) -- generational page reclaim.
-# CONFIG_LRU_GEN_STATS is intentionally off (per-node/per-memcg overhead).
-# Runtime kill switch: /sys/kernel/mm/lru_gen/enabled (0 falls back to the
-# classic active/inactive LRU path, which is kept fully intact).
-CONFIG_LRU_GEN=y
-CONFIG_LRU_GEN_ENABLED=y
-CONFIG_LRU_GEN_STATS=n
-CONFIG_NR_LRU_GENS=7
-CONFIG_TIERS_PER_GEN=4
-
-# ntsync: NT synchronization primitives (/dev/ntsync) for Wine/Proton
-CONFIG_NTSYNC=y
