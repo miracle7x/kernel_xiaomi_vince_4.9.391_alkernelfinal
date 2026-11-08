@@ -49,8 +49,8 @@ jobs:
   
       - name: Setup BakaSU
         run: |
-          curl -LSs "https://raw.githubusercontent.com/Baka-SU/BakaSU/main/kernel/setup.sh" | bash -s main
-
+          curl -LSs "https://raw.githubusercontent.com/RapliVx/KernelSU/xxksu/kernel/setup.sh" | bash -s xxksu
+          
       - name: Start Build (with log)
         env:
           KBUILD_BUILD_USER: "cappuccino"
