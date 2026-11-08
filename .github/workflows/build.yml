@@ -47,10 +47,9 @@ jobs:
             tar -xf zyc-clang.tar.gz
             rm -f zyc-clang.tar.gz
   
-      - name: Setup KernelSU (Legacy)
+      - name: Setup BakaSU
         run: |
-          curl -LSs "https://raw.githubusercontent.com/manipvlator/KernelSU/refs/heads/main/kernel/setup.sh" | bash -s main
-          curl https://raw.githubusercontent.com/maxsteeel/nomount/refs/heads/dev/kernel/setup.sh | bash -s master
+          curl -LSs "https://raw.githubusercontent.com/Baka-SU/BakaSU/main/kernel/setup.sh" | bash -s sync-up
 
       - name: Start Build (with log)
         env:
